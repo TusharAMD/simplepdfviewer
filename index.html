@@ -2,7 +2,11 @@
 <head>
 <title></title>
 </head>
-<script>
+
+<body>
+<iframe id="iframe" src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/mozilla/pdf.js-sample-files/master/helloworld.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+</body>
+  <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const file = urlParams.get('filename')
@@ -11,7 +15,4 @@
   tagname.src=`https://docs.google.com/gview?url="$(file)"&embedded=true`
   console.log(tagname.src)
 </script>
-<body>
-<iframe id="iframe" src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/mozilla/pdf.js-sample-files/master/helloworld.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
-</body>
 </html>
