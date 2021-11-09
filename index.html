@@ -15,7 +15,7 @@
   const file = urlParams.get('filename')
   console.log(file)
   tagname=document.getElementById("iframe")
-  tagname.src=`https://docs.google.com/gview?url="${file}"&embedded=true`
+  tagname.src=`"${file}"`
   console.log(tagname.src)
 </script>
 </html>
