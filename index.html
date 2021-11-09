@@ -4,10 +4,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js" integrity="sha512-t2JWqzirxOmR9MZKu+BMz0TNHe55G5BZ/tfTmXMlxpUY8tsTo3QMD27QGoYKZKFAraIPDhFv56HLdN11ctmiTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
+  <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
 <body>
-<iframe id="iframeold" src="https://raw.githubusercontent.com/mozilla/pdf.js-sample-files/master/helloworld.pdf&embedded=true" style="width:90vw; height:90vh;" frameborder="0"></iframe>
-<embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=http://example.com/the.pdf" width="500" height="375">
+<h1>PDF.js 'Hello, world!' example</h1>
+
+<canvas id="the-canvas"></canvas>
 </body>
   <script>
   const queryString = window.location.search;
