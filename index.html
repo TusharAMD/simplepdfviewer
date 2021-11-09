@@ -6,8 +6,8 @@
 
 <body>
 <iframe id="iframeold" src="https://raw.githubusercontent.com/mozilla/pdf.js-sample-files/master/helloworld.pdf&embedded=true" style="width:90vw; height:90vh;" frameborder="0"></iframe>
-<embed id="iframe" src="http://example.com/the.pdf" width="500" height="375" 
- type="application/pdf">
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=http://example.com/the.pdf" width="500" height="375">
 </body>
   <script>
   const queryString = window.location.search;
@@ -15,7 +15,7 @@
   const file = urlParams.get('filename')
   console.log(file)
   tagname=document.getElementById("iframe")
-  tagname.src=`"${file}"`
+  tagname.src=`https://drive.google.com/viewerng/viewer?embedded=true&url="${file}"`
   console.log(tagname.src)
 </script>
 </html>
