@@ -1,3 +1,12 @@
+<div>
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+  &nbsp; &nbsp;
+  <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+
+<canvas id="the-canvas"></canvas>
+
 <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
 <script>
 const queryString = window.location.search;
@@ -103,11 +112,3 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 });
 </script>
 
-<div>
-  <button id="prev">Previous</button>
-  <button id="next">Next</button>
-  &nbsp; &nbsp;
-  <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-</div>
-
-<canvas id="the-canvas"></canvas>
